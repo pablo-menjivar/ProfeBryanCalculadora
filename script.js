@@ -1,5 +1,6 @@
 // Seleccionar elementos del DOM
 const form = document.getElementById('discountForm');
+const clearButton = document.getElementById('clearButton');
 const purchaseAmountInput = document.getElementById('purchaseAmount');
 const resultDiv = document.getElementById('result');
 //Funcion para calcular y mostrar el descuento
@@ -34,3 +35,9 @@ function calculateDiscount(event) {
 }
 //Agregamos el event listener al formulario
 form.addEventListener('submit', calculateDiscount);
+//------------------------- Para el boton de limpiar campos -------------------------
+// Limpiar campos al hacer click en el boton
+clearButton.addEventListener('click', function() {
+    purchaseAmountInput.value = '';
+    resultDiv.innerHTML = '';
+});
