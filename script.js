@@ -17,7 +17,7 @@ function calculateDiscount(event) {
     let discountPercentage;
     if (purchaseAmount >= 1000) {
         discountPercentage = 15;
-    } else if (purchaseAmount >= 500 && purchaseAmount <= 999) {
+    } else if (purchaseAmount >= 500 && purchaseAmount <= 999.99) {
         discountPercentage = 10;
     } else {
         discountPercentage = 5;
